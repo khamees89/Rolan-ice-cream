@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="theme-color" content="#FF6B9D">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <meta name="apple-mobile-web-app-title" content="رولان آيس كريم">
+    
+    <title>رولان آيس كريم - أفضل الآيس كريم والمشروبات</title>
+    <meta name="description" content="تطبيق رولان آيس كريم - اكتشف أفضل أنواع الآيس كريم والمشروبات الباردة">
+    
+    <!-- PWA Manifest -->
+    <link rel="manifest" href="manifest.json">
+    
+    <!-- Favicon and Icons -->
+    <link rel="icon" href="icons/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" href="icons/icon-192x192.png">
+    
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="styles.css">
+    
+    <!-- Preload fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <h1>🍦 رولان آيس كريم</h1>
+            </div>
+            <nav class="nav">
+                <button class="nav-toggle" id="navToggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="#home" class="nav-link">الرئيسية</a></li>
+                    <li><a href="#menu" class="nav-link">القائمة</a></li>
+                    <li><a href="#about" class="nav-link">معلومات عنا</a></li>
+                    <li><a href="#contact" class="nav-link">اتصل بنا</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <h2 class="hero-title">أفضل الآيس كريم والمشروبات</h2>
+                    <p class="hero-description">استمتع بأشهى أنواع الآيس كريم الطبيعي والمشروبات الباردة المنعشة</p>
+                    <button class="btn btn-primary" onclick="scrollToSection('menu')">اطلب الآن</button>
+                </div>
+                <div class="hero-image">
+                    <div class="ice-cream-placeholder">🍦</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Menu Section -->
+        <section id="menu" class="menu">
+            <div class="container">
+                <h2 class="section-title">قائمتنا</h2>
+                <div class="menu-grid">
+                    <div class="menu-category">
+                        <h3 class="category-title">آيس كريم 🍦</h3>
+                        <div class="menu-items">
+                            <div class="menu-item">
+                                <div class="item-image">🍓</div>
+                                <div class="item-info">
+                                    <h4>آيس كريم الفراولة</h4>
+                                    <p>مصنوع من الفراولة الطبيعية</p>
+                                    <span class="price">15 ريال</span>
+                                </div>
+                                <button class="btn btn-secondary add-to-cart">أضف للسلة</button>
+                            </div>
+                            <div class="menu-item">
+                                <div class="item-image">🍫</div>
+                                <div class="item-info">
+                                    <h4>آيس كريم الشوكولاتة</h4>
+                                    <p>شوكولاتة بلجيكية فاخرة</p>
+                                    <span class="price">18 ريال</span>
+                                </div>
+                                <button class="btn btn-secondary add-to-cart">أضف للسلة</button>
+                            </div>
+                            <div class="menu-item">
+                                <div class="item-image">🥭</div>
+                                <div class="item-info">
+                                    <h4>آيس كريم المانجو</h4>
+                                    <p>مانجو استوائية طازجة</p>
+                                    <span class="price">16 ريال</span>
+                                </div>
+                                <button class="btn btn-secondary add-to-cart">أضف للسلة</button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="menu-category">
+                        <h3 class="category-title">مشروبات 🥤</h3>
+                        <div class="menu-items">
+                            <div class="menu-item">
+                                <div class="item-image">🧊</div>
+                                <div class="item-info">
+                                    <h4>عصير طبيعي مثلج</h4>
+                                    <p>عصائر طبيعية منعشة</p>
+                                    <span class="price">12 ريال</span>
+                                </div>
+                                <button class="btn btn-secondary add-to-cart">أضف للسلة</button>
+                            </div>
+                            <div class="menu-item">
+                                <div class="item-image">🥤</div>
+                                <div class="item-info">
+                                    <h4>ميلك شيك</h4>
+                                    <p>مخفوق الحليب بالنكهات</p>
+                                    <span class="price">14 ريال</span>
+                                </div>
+                                <button class="btn btn-secondary add-to-cart">أضف للسلة</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about">
+            <div class="container">
+                <h2 class="section-title">معلومات عنا</h2>
+                <div class="about-content">
+                    <div class="about-text">
+                        <h3>قصة رولان</h3>
+                        <p>رولان آيس كريم هو مشروع عائلي بدأ من حب صنع أفضل أنواع الآيس كريم الطبيعي. نحن ملتزمون بتقديم منتجات عالية الجودة باستخدام أفضل المكونات الطبيعية.</p>
+                        
+                        <h4>لماذا نحن مميزون؟</h4>
+                        <ul class="features-list">
+                            <li>✅ مكونات طبيعية 100%</li>
+                            <li>✅ طعم أصيل ومميز</li>
+                            <li>✅ جودة عالية مضمونة</li>
+                            <li>✅ خدمة توصيل سريعة</li>
+                        </ul>
+                    </div>
+                    <div class="about-image">
+                        <div class="store-placeholder">🏪</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact">
+            <div class="container">
+                <h2 class="section-title">اتصل بنا</h2>
+                <div class="contact-content">
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <span class="icon">📱</span>
+                            <div>
+                                <h4>الهاتف</h4>
+                                <p>+966 50 123 4567</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <span class="icon">📍</span>
+                            <div>
+                                <h4>العنوان</h4>
+                                <p>الرياض، المملكة العربية السعودية</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <span class="icon">🕒</span>
+                            <div>
+                                <h4>ساعات العمل</h4>
+                                <p>يومياً من 2 ظهراً إلى 12 منتصف الليل</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="order-section">
+                        <h3>اطلب الآن</h3>
+                        <p>اتصل بنا أو استخدم التطبيق للطلب المباشر</p>
+                        <div class="order-buttons">
+                            <a href="tel:+966501234567" class="btn btn-primary">📞 اتصل الآن</a>
+                            <a href="https://wa.me/966501234567" class="btn btn-success" target="_blank">💬 واتساب</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>رولان آيس كريم</h4>
+                    <p>أفضل الآيس كريم والمشروبات</p>
+                </div>
+                <div class="footer-section">
+                    <h4>روابط سريعة</h4>
+                    <ul>
+                        <li><a href="#home">الرئيسية</a></li>
+                        <li><a href="#menu">القائمة</a></li>
+                        <li><a href="#about">معلومات عنا</a></li>
+                        <li><a href="#contact">اتصل بنا</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>تابعنا</h4>
+                    <div class="social-links">
+                        <a href="#" class="social-link">📘 فيسبوك</a>
+                        <a href="#" class="social-link">📸 انستغرام</a>
+                        <a href="#" class="social-link">🐦 تويتر</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 رولان آيس كريم. جميع الحقوق محفوظة.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Cart Notification -->
+    <div id="cartNotification" class="cart-notification">
+        <span id="cartMessage">تم إضافة المنتج للسلة!</span>
+        <button id="closeNotification">&times;</button>
+    </div>
+
+    <!-- Install App Banner -->
+    <div id="installBanner" class="install-banner" style="display: none;">
+        <div class="install-content">
+            <span>📱</span>
+            <div>
+                <strong>ثبت التطبيق</strong>
+                <p>للوصول السريع والمزيد من المميزات</p>
+            </div>
+            <button id="installBtn" class="btn btn-primary">ثبت</button>
+            <button id="dismissInstall">&times;</button>
+        </div>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
